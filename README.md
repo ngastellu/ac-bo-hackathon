@@ -5,4 +5,7 @@ Our methodology, was to use a pre-train a BERT language model trained to predict
 We want to start with a protein that already has affinity to fentanyl so we took a previously developed protein published by Lisa M. Eubanks. We analyzed the protein and selected the residues with 5 angstroms of the ligand to be selected for possible sites of mutagenesis. Then take a mutation if we find it increased the binding above a certain threshold, and do this until we find 3 mutations chosen by BO which our language model predicts to have high binding affinity. 
 We compared the methodology to a baseline of using random mutations. And we look at using other acquisition functions. We then took our results and analyzed them using pymol’s mutagenesis tool which showed how the suggested changes could lead to new interactions being formed, and how some lead to clashes potentially changing the conformation of the protein. Finally, we investigated the changes of these mutations on the structure using alpha fold. 
 
+Starting protein found here: https://www.rcsb.org/structure/5TZO (Paper:  https://doi.org/10.7554/eLife.28909)
+Binding affinity model we used: https://github.com/ORNL/affinity_pred/tree/master  (Paper: https://doi.org/10.1177/10943420221121804)
+
 Thanks for checking our project out!
